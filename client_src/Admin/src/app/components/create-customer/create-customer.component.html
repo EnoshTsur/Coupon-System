@@ -1,0 +1,23 @@
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Create new Customer</h1><br>
+<form class="form-horizontal" style="margin-left: 20px">
+    <h3 *ngIf="password==null || name==null" style="text-align:center;color:red ; text-shadow: 0 0 10px black;">Please enter values</h3>
+    <div class="form-group">
+        <label for="inputUserName" class="control-label col-sm-2">Username</label>
+        <div class="col-sm-6">
+            <input name="name" class="form-control" placeholder="Username"
+                    type="text" id="inputUserName" [(ngModel)]="name"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="control-label col-sm-2">Password</label>
+        <div class="col-sm-6">
+            <input name="password" class="form-control" placeholder="Password"
+                    type="password" id="inputPassword" [(ngModel)]="password" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button *ngIf="name!=null && name!='' && password!=null && password!=''" class="btn btn-success btn-lg" (click)="createCustomerButton()">Create <span class="glyphicon glyphicon-user"></span></button>
+        </div>
+    </div>
+</form>

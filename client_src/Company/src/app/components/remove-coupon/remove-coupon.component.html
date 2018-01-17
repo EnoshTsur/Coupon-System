@@ -1,0 +1,15 @@
+
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Remove Coupon</h1><br>
+<div class="dropdown" style="padding-left: 3%">
+    <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" (click)="getCouponsForRemove()">
+        Select Coupon <span class="glyphicon glyphicon-search"></span>
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header" *ngFor="let coup of coupons" (click)="setCoupon(coup)"><strong> {{coup._title}}</strong></li>
+    </ul>
+</div>
+<br>
+<h1 style="margin-left:3% ; text-shadow: 0 0 15px grey, 0 0 15px rgb(100, 95, 95); color:white;">{{coupon._title}}</h1>
+<br>
+<button style="margin-left:3%" *ngIf="coupon._title!=''" class="btn btn-danger" (click)="removeCoupon()">Remove <span class="glyphicon glyphicon-trash"></span></button>

@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Admin</title><base href="/Coupons/Admin/index.html"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><script>$(document).ready(function(){
+
+
+
+      $('.btn').click(() => {
+        animate('#div-router', 'slideInUp');
+        return false;
+      });
+
+      function animate(element, animation) {
+        $(element).addClass('animated ' + animation);
+        var wait = setTimeout(() => {
+          $(element).removeClass('animated ' + animation);
+        }, 2000);
+      }
+
+    })</script><link href="styles.d806d640a56a1c9a2692.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.86281ce0d5be1b07ae65.bundle.js"></script><script type="text/javascript" src="polyfills.ec03e741fb653f504773.bundle.js"></script><script type="text/javascript" src="main.90aa6ce86f3b3bc9fbea.bundle.js"></script></body></html>

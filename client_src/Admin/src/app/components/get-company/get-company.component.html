@@ -1,0 +1,22 @@
+
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Get Company</h1><br>
+<div class="dropdown" style="padding-left: 3%">
+  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">
+      Select Company <span class="glyphicon glyphicon-search"></span>
+      <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+      <li class="dropdown-header" *ngFor="let comp of companies" (click)="setCompany(comp)"><strong> {{comp._compName}}</strong></li>
+  </ul>
+</div>
+<br>
+<div class="col-sm-3" style="background-color: rgb(92, 106, 189); border-radius: 2%; margin-left: 2%;">
+<h1 style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:white;">{{company._compName}}</h1>
+<h3 *ngIf="company._id != null" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">ID:{{company._id}}</h3>
+<h3 *ngIf="company._password != ''" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Password:{{company._password}}</h3>
+<h3 *ngIf="company._email != ''" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Email:{{company._email}}</h3>
+</div>
+<br>
+
+
+

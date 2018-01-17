@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Coupon-System!</title>
+    <link rel="stylesheet" href="Css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+
+
+    <!-- Coupon System -->
+
+<div class="pimg1">
+        <div>
+          <a href="https://github.com/EnoshTsur">
+            <img class="me-img" src="https://scontent.fhfa2-1.fna.fbcdn.net/v/t1.0-9/23905445_10213494300739374_905824103515577598_n.jpg?oh=c0021793feb0e9004149d0db30155f9c&oe=5AE4A31E"
+             alt="Me" style="width:15%; margin-left: 2%; border-radius:25%;
+              opacity:1; border: 1px solid black;">
+          </a>
+        </div>
+            <a href="mailto:enoshh12@gmail.com"><p style="margin-left: 3%; font-weight:900; color:white">Developed by Enosh Tsur &copy<br> enoshh12@gmail.com</p></a>
+  <div class="ptext">
+    <span class="border">
+        <header>
+            <div class="animated cp1 flip">
+                <h1 style="color: black; font-size: 500%;">Coupon - System</h1>
+            </div>
+            <br>
+    <h3 style="color:black; font-weight:bolder;">Your <strong>Perfect</strong> place to manage Coupons</h3>
+    </header>
+    </span>
+  </div>
+</div>
+
+<!-- Admin -->
+<section class="section section-light" style="background-color:rgb(202, 218, 223) ">
+    <div class="container">
+        <div class="row">
+          <div id="Admin" class="col-md-12" style="background-color: rgb(202, 218, 223);">
+              <h1 class="client-header" value="Admin" onclick="clientOption('Admin')">Admin <span class="glyphicon glyphicon-sunglasses"></span></h1>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="background-color: rgb(202, 218, 223);">
+            </div>
+          </div>
+    </div>
+
+</section>
+
+<div class="pimg2">
+    <div class="ptext">
+      <span class="border" style="font-size: 200%; color: rgb(244, 244, 248); text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);">
+          <h3 style="background-color: rgb(202, 218, 223);">
+             The great Admin can manage <strong>Companies & Customers:</strong>
+            </h3>
+            <br>
+            <ul>
+              <li>
+                <h4>
+                  Create new Company/Customer & add it to the System
+               </h4>
+              </li>
+              <li>
+                <h4>
+                  Update exist Company/Customer & add its new values to the System
+               </h4>
+              </li>
+              <li>
+                <h4>
+                  Remove exist Company/Customer from the System
+               </h4>
+              </li>
+              <li>
+                <h4>
+                  Get all Companies/Customers details
+               </h4>
+              </li>
+            </ul>
+      </span>
+    </div>
+  </div>
+
+  <!-- Company -->
+  <section class="section section-dark" style="background-color: rgb(212, 241, 212)">
+    <div class="container">
+      <div class="row">
+        <div id="Company" class="col-md-12"  style="background-color: rgb(212, 241, 212)">
+          <h1 class="client-header" value="Company" onclick="clientOption('Company')">Company <span class="glyphicon glyphicon-lock"></span></h1>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border" style="font-size: 200%; color: rgb(244, 244, 248); text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);">
+                <h3>
+                   The orginized Company can manage <strong>Coupons:</strong>
+                  </h3>
+                  <br>
+                  <ul>
+                    <li>
+                      <h4>
+                        Create new Coupon & add it to the System
+                     </h4>
+                    </li>
+                    <li>
+                      <h4>
+                        Update exist Coupon & add its new values to the System
+                     </h4>
+                    </li>
+                    <li>
+                      <h4>
+                        Remove exist Coupon from the System
+                     </h4>
+                    </li>
+                    <li>
+                      <h4>
+                        Get all its Coupons details
+                     </h4>
+                    </li>
+                  </ul>
+            </span>
+        </div>
+      </div>
+
+      <!-- Customer -->
+      <section class="section section-dark" style="background-color: rgb(247, 247, 215)">
+        <div class="container">
+          <div class="row">
+              <div id="Customer" class="col-md-12"  style="background-color: rgb(247, 247, 215)">
+                  <h1 class="client-header" value="Customer" onclick="clientOption('Customer' )">Customer <span class="glyphicon glyphicon-user"></span></h1>
+
+              </div>
+          </div>
+        </div>
+        </section>
+
+        <div class="pimg1">
+            <div class="ptext">
+                <span class="border" style="font-size: 200%; color: rgb(244, 244, 248); text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);">
+                    <h3>
+                       The simple Customer can manage his <strong>Coupons:</strong>
+                      </h3>
+                      <br>
+                      <ul>
+                        <li>
+                          <h4>
+                            Purchase new Coupon & add it to the System
+                         </h4>
+                        </li>
+                        <li>
+                          <h4>
+                            Get all of his purchased Coupons
+                         </h4>
+                        </li>
+                        <li>
+                          <h4>
+                            Get all of his purchased Coupons by categories
+                         </h4>
+                        </li>
+                      </ul>
+                </span>
+
+                  <!-- -->
+        <br>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12"  style="background-color: rgb(204, 204, 204)">
+                      <h3 class="client-header" style="color:rgb(56, 73, 148)">Please login for continue</h3>
+                  </div>
+            </div>
+          </div>
+        <form  class="form-inline" action="./loginController" method="POST">
+          <div class="form-group col-sm-12">
+          <div class="container" style="box-shadow: 0 0 5px grey; background-color: rgb(204, 204, 204);">
+              <div class="row">
+                  <div class="col-md-offset-2">
+                      <br>
+                      <label for="inputUserName" class="control-label col-sm-4 col-md-offset-2" style="color:rgb(56, 73, 148);">Name</label>
+                          <div class="col-sm-6">
+                             <input type="text" name="name" placeholder="User-Name" class="form-control" id="inputUserName">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-offset-2">
+                        <label for="inputPassword" class="control-label col-sm-4 col-md-offset-2" style="color:rgb(56, 73, 148);">Password </label>
+                        <div class="col-sm-6">
+                            <input type="password" name="password" placeholder="Password" class="form-control" id="inputPassword" >
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-2">
+                            <label class="control-label col-sm-4 col-md-offset-2" style="color:rgb(56, 73, 148);">Type</label>
+                            <div class="col-sm-2">
+                                <select name="type" class="form-control" id="select-client">
+                                    <option value="Admin">Admin</option>
+                                    <option value="Company">Company</option>
+                                    <option value="Customer">Customer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-8 col-md-offset-5">
+                            <br>
+                        <button type="submit" class="btn btn-success btn-lg" style="margin-left: 5vw; margin-bottom: 3vh;">Send</button>
+                    </div>
+        
+                </div>
+            </div>
+            </form>
+      </div>
+      </div>
+
+      <script>
+          $(document).ready(function(){
+      
+      
+      
+            $('.me-img').hover(() => {
+              animate('.me-img', 'tada ');
+              return false;
+            });
+      
+            function animate(element, animation) {
+              $(element).addClass('animated ' + animation);
+              var wait = setTimeout(() => {
+              $(element).removeClass('animated ' + animation);
+              }, 2000);
+            }
+      
+          })
+        </script>
+    
+</body>
+</html>

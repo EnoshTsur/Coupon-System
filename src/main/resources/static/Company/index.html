@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Company</title><base href="/Coupons/Company/index.html"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><script>$(document).ready(function(){
+
+
+
+      $('.btn').click(() => {
+        animate('#div-router', 'slideInUp');
+        return false;
+      });
+
+      function animate(element, animation) {
+        $(element).addClass('animated ' + animation);
+        var wait = setTimeout(() => {
+        $(element).removeClass('animated ' + animation);
+        }, 2000);
+      }
+
+    })</script><link href="styles.f077eec1b0a85fa52762.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.d58f92914d30b2102481.bundle.js"></script><script type="text/javascript" src="polyfills.5b59249e2a37b3779465.bundle.js"></script><script type="text/javascript" src="main.6387070c9ff4d4d81184.bundle.js"></script></body></html>

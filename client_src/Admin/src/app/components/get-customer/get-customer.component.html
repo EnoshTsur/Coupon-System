@@ -1,0 +1,20 @@
+
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Get Customer</h1><br>
+<div class="dropdown" style="padding-left: 3%">
+  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">
+      Select Customer <span class="glyphicon glyphicon-search"></span>
+      <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+      <li class="dropdown-header" *ngFor="let cust of customers" (click)="setCustomer(cust)"><strong> {{cust._custName}}</strong></li>
+  </ul>
+</div>
+<br>
+<div class="col-sm-3" style="background-color: rgb(92, 106, 189); border-radius: 2%; margin-left: 2%;">
+<h1 style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:white;">{{customer._custName}}</h1>
+<h3 *ngIf="customer._id != null" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">ID:{{customer._id}}</h3>
+<h3 *ngIf="customer._password != ''" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Password:{{customer._password}}</h3>
+</div>
+
+<br>
+

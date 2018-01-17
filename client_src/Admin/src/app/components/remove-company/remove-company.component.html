@@ -1,0 +1,15 @@
+
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Remove Company</h1><br>
+<div class="dropdown" style="padding-left: 3%">
+    <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" (click)="getCompaniesForRemove()">
+        Select Company <span class="glyphicon glyphicon-search"></span>
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header" *ngFor="let comp of companies" (click)="setCompany(comp)"><strong> {{comp._compName}}</strong></li>
+    </ul>
+</div>
+<br>
+<h1 style="margin-left:3% ; text-shadow: 0 0 15px grey, 0 0 15px rgb(100, 95, 95); color:white;">{{company._compName}}</h1>
+<br>
+<button style="margin-left:3%" *ngIf="company._compName!=''" class="btn btn-danger" (click)="removeCompany()">Remove <span class="glyphicon glyphicon-trash"></span></button>
