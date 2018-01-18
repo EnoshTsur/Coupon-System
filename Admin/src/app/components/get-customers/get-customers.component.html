@@ -1,0 +1,12 @@
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Get all Customers</h1><br>
+<div class="container" >
+    <div class="row">
+      <div *ngFor="let cust of customers" class="col-md-4" style="background-color: rgb(202, 218, 223); margin: 2%; box-shadow: 0 0 15px rgb(10, 10, 80); text-align:center;">
+        <h1 style="text-shadow: 0 0 15px rgb(7, 7, 39); padding: 2%"><span class="glyphicon glyphicon-user"></span></h1>
+        <h3 style="text-shadow: 0 0 15px rgb(7, 7, 39)"><strong>Customer: </strong> {{cust._custName}} <span class="glyphicon glyphicon-ice-lolly"></span></h3>
+        <h4 style="text-shadow: 0 0 15px rgb(7, 7, 39)"><strong>Password: </strong> {{cust._password}} <span class="glyphicon glyphicon-eye-close"></span></h4>
+        <h4 style="text-shadow: 0 0 15px rgb(7, 7, 39)"><strong>ID: </strong> {{cust._id}}</h4>
+          <br><br>
+      </div>
+    </div>
+  </div>

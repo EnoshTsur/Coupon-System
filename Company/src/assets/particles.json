@@ -1,0 +1,54 @@
+{
+  "particles" : {
+    "number" : {
+      "value" : 500
+    },
+    "color" : {
+      "value" : "#000"
+    },
+    "shape" : {
+      "type" : "circle",
+      "stroke" : {
+        "width" : 2,
+        "color" : "#666"
+      }
+    },
+    "opacity": {
+      "value" : 0.5,
+      "random" : true
+    },
+    "size" : {
+      "value" : 2
+    },
+    "line_linked": {
+      "enable": true,
+      "distance" : 110,
+      "color": "#000"
+    },
+    "move" : {
+      "enable" : true,
+      "speed" : 3
+    }
+
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable" : true,
+        "mode" : "repulse"
+      }
+    },
+    "modes": {
+      "repulse": {
+        "distance": 50,
+        "duration": 0.4
+      }
+    },
+    "bubble": {
+      "distance":50
+    }
+  }
+
+}
+
+

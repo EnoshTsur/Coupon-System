@@ -1,0 +1,91 @@
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Create Coupon</h1><br>
+<form class="form-horizontal" style="margin-left: 20px">
+  <h3 *ngIf="title==null || startDate==null || endDate==null || type==null || amount==0 || message==null || price==0 || image==null" style="text-align:center;color:red ; text-shadow: 0 0 10px black;">Please enter values</h3>
+
+
+  <div class="form-group">
+      <label for="title" class="control-label col-sm-2">Title:</label>
+      <div class="col-sm-6">
+          <input name="title" class="form-control" placeholder="Title"
+                  type="text" id="inputTitle" [(ngModel)]="title"/>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <label for="startDate" class="control-label col-sm-2">Start Date:</label>
+      <div class="col-sm-6">
+          <input name="startDate" class="form-control" placeholder="Start Date"
+                  type="date" id="inputStartDate" [(ngModel)]="startDate"/>
+      </div>
+  </div>
+
+
+  <div class="form-group">
+      <label for="endDate" class="control-label col-sm-2">End Date:</label>
+      <div class="col-sm-6">
+          <input name="endDate" class="form-control" placeholder="End Date"
+                  type="date" id="inputEndDate" [(ngModel)]="endDate"/>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <label for="amount" class="control-label col-sm-2">Amount:</label>
+      <div class="col-sm-6">
+          <input name="amount" class="form-control" placeholder="Amount"
+                  type="number" id="inputAmount" [(ngModel)]="amount"/>
+      </div>
+  </div>
+
+    <div class="form-group">
+        <label for="inputType" class="control-label col-sm-2">Type:</label>
+        <div class="col-sm-6">
+          <select name="type" class="form-control selectpicker" [(ngModel)]="type">
+            <option data-tokens="Camping" value="CAMPING">Camping</option>
+            <option data-tokens="Camping" value="ELECTRICITY">Electricity</option>
+            <option data-tokens="Camping" value="FOOD">Food</option>
+            <option data-tokens="Camping" value="HEALTH">Health</option>
+            <option data-tokens="Camping" value="RESTURANTS">Resturants</option>
+            <option data-tokens="Camping" value="SPORTS">Sports</option>
+            <option data-tokens="Camping" value="TRAVELLING">Travelling</option>
+          </select>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="inputMessage" class="control-label col-sm-2">Message:</label>
+        <div class="col-sm-6">
+            <input name="message" class="form-control" type="text" placeholder="Message" [(ngModel)]="message">
+          </div>
+      </div>
+
+
+      <div class="form-group">
+          <label for="price" class="control-label col-sm-2">Price:</label>
+          <div class="col-sm-6">
+              <input name="price" class="form-control" placeholder="Price"
+                      type="number" id="inputPrice" [(ngModel)]="price"/>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="inputImage" class="control-label col-sm-2">Image Link:</label>
+            <div class="col-sm-6">
+                <input name="image" class="form-control" type="text" placeholder="Image" [(ngModel)]="image">
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputImage" class="control-label col-sm-2">Image:</label>
+              <div class="col-sm-6">
+                <img *ngIf="image!= null && image!= ''" src="{{image}}" alt="Link Broken" class="img-rounded" style="width: 60%; height:60% ;padding: 3%;">
+                </div>
+            </div>
+
+  <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+          <button *ngIf="title!= null &&  title!= '' && startDate!= null && endDate!= null && amount!= null && amount>0 && type!= null
+                        && message!= null && message!= '' && price!=null && price>0 && image!= null && image !=''" class="btn btn-success btn-lg" (click)="createCoupon()">Create <span class="glyphicon glyphicon-lock"></span></button>
+      </div>
+  </div>
+</form>

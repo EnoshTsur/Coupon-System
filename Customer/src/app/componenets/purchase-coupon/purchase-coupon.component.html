@@ -1,0 +1,15 @@
+
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Purchase Coupon</h1><br>
+
+  <div class="container"  >
+    <div class="row">
+      <div *ngFor="let coup of coupons" class="col-md-7" style="background-color: rgb(202, 218, 223); margin: 2%; box-shadow: 0 0 15px rgb(10, 10, 80)">
+        <h3 style="text-shadow: 0 0 15px rgb(7, 7, 39)">{{coup._title}} <span class="glyphicon glyphicon-gift"></span></h3><br>
+        <h3><img class="col-md-4 col-md-offset-4 img-circle" src="{{coup._image}}" alt="Coupon" style="width: 60%; height:60%">
+          <br><br>
+          <button class="btn btn-success" (click)="clickedButton(coup)">Purchase</button>
+        </h3>
+      </div>
+    </div>
+  </div>
+

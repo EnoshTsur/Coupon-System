@@ -1,0 +1,81 @@
+<app-header></app-header>
+<br>
+<!-- menu actions -->
+
+<!-- finish menu -->
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!-- Company -->
+            <li>
+              <div class="col-md-2">
+              <button routerLink="/createCompany" class="btn btn-success btn-sm">Create Company <span class="glyphicon glyphicon-lock"></span></button>
+            </div>
+          </li>
+            <li>
+              <div class="col-md-2" >
+              <button routerLink="/updateCompany" class="btn btn-warning btn-sm">Update Company <span class="glyphicon glyphicon-refresh"></span></button>
+            </div>
+          </li>
+            <li>
+                <div class="col-md-2">
+              <button routerLink="/removeCompany" class="btn btn-danger btn-sm">Remove Company <span class="glyphicon glyphicon-remove"></span></button>
+                </div>
+            </li>
+            <li>
+              <div class="col-md-2" >
+                <button routerLink="/getCompany" class="btn btn-info btn-sm">Get Company <span class="glyphicon glyphicon-search"></span></button>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-2" >
+                <button routerLink="/getCompanies" class="btn btn-info btn-sm">Get Companies <span class="glyphicon glyphicon-search"></span></button>
+              </div>
+            </li>
+             <hr>
+            <!-- Customer -->
+            <li>
+              <div class="col-md-2">
+                <button routerLink="/createCustomer" class="btn btn-success btn-sm">Create Customer <span class="glyphicon glyphicon-user"></span></button>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-2">
+                <button routerLink="/updateCustomer" class="btn btn-warning btn-sm">Update Customer <span class="glyphicon glyphicon-refresh"></span></button>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-2">
+                <button routerLink="/removeCustomer" class="btn btn-danger btn-sm">Remove Customer <span class="glyphicon glyphicon-remove"></span></button>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-2" >
+                <button routerLink="/getCustomer" class="btn btn-info btn-sm">Get Customer <span class="glyphicon glyphicon-search"></span></button>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-2" >
+                <button routerLink="/getCustomers" class="btn btn-info btn-sm">Get Customers <span class="glyphicon glyphicon-search"></span></button>
+              </div>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<br><br>
+<div class="div-bg">
+  <div id="div-router">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

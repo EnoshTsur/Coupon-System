@@ -1,0 +1,10 @@
+img{
+  width: 18vw;
+  height: 25vh;
+  border: 2% solid rgb(56, 144, 216);
+}
+h3{
+  text-align: center;
+  text-shadow: 0 0 15px rgb(39, 94, 245);
+  font-weight: bolder;
+}

@@ -1,0 +1,23 @@
+
+<h1 style="color:aliceblue; text-shadow: 0 0 15px black; text-align:center;">Get Coupon</h1><br>
+<div class="dropdown" style="padding-left: 3%">
+  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" (click)="getCoupons()">
+      Select Coupon <span class="glyphicon glyphicon-search"></span>
+      <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+      <li class="dropdown-header" *ngFor="let coup of coupons" (click)="setCoupon(coup)"><strong> {{coup._title}}</strong></li>
+  </ul>
+</div>
+<br>
+<div class="col-sm-3" style="background-color: rgb(92, 106, 189); border-radius: 2%; margin-left: 2%;">
+<h1 style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:white;">{{coupon._title}}</h1>
+<h3 *ngIf="coupon._startDate != null" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Start Date:{{coupon._startDate}}</h3>
+<h3 *ngIf="coupon._endDate != null" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">End Date:{{coupon._endDate}}</h3>
+<h3 *ngIf="coupon._amount != 0" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Amount:{{coupon._amount}}</h3>
+<h3 *ngIf="coupon._type != ''" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Type:{{coupon._type}}</h3>
+<h3 *ngIf="coupon._message != ''" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Message:{{coupon._message}}</h3>
+<h3 *ngIf="coupon._price != 0" style="margin-left:3% ; text-shadow: 0 0 15px rgb(94, 92, 92), 0 0 15px rgb(46, 44, 44); color:rgb(44, 44, 117);">Price:{{coupon._price}}</h3>
+<img *ngIf="coupon._image != ''" src="{{coupon._image}}" alt="Image" class="img-rounded" style="width: 60%; height:60%; padding: 3%;">
+</div>
+<br>
